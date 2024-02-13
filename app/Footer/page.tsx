@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center h-60 bg-black w-full">
+    <div
+      id="footer"
+      className="flex h-60 w-full flex-col items-center justify-center border-t-4 border-gray-500 bg-[#342145]"
+    >
       <h1 className=" text-white">footer</h1>
     </div>
   );

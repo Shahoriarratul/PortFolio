@@ -2,39 +2,37 @@
 import Link from "next/link";
 
 import React, { EventHandler, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
-import Image from "next/image";
-import { motion } from "framer-motion";
+
+import { Goldman } from "next/font/google";
+
+const goldman = Goldman({
+  subsets: ["latin", "latin-ext"],
+  weight: "700",
+});
 
 const navStyle =
-  "m-5 transition duration-500 ease-in-out hover:text-[#336A86] ";
+  " transition duration-500 ease-in-out rounded-full hover:bg-pink-300/20 p-4";
 export default function Header() {
-  const [logosrc, setLogoSrc] = useState("/logo-color.png");
-
-  const router = useRouter();
-
   return (
-    <div
-      className="flex flex-row items-stretch justify-between bg-slate-900  mt-5 h-16 fixed p-5 rounded-full w-[700px] transition  hover:bg-opacity-30 text-white  hover:text-black "
-      onMouseEnter={() => {
-        setLogoSrc("/logo-black.png");
-      }}
-      onMouseLeave={() => {
-        setLogoSrc("/logo-color.png");
-      }}
-    >
-      <Link href="#home" className="flex flex-col items-center justify-center ">
-        <Image src={logosrc} width={128} height={128} alt="Logo" />
+    <div className="fixed z-10 mt-5 flex h-16 w-[80vw] flex-row items-stretch justify-between rounded-full bg-violet-800/25 bg-opacity-45 p-5 text-white transition duration-500 ease-in-out hover:bg-opacity-60 hover:ring-2 hover:ring-inset hover:ring-pink-300">
+      <Link href="#home" className="flex flex-col items-center justify-center">
+        <div className={`${goldman.className} text-xl`}>SHAHORIAR RATUL</div>
       </Link>
-      <ul className="flex flex-row gap-1 items-center justify-center ">
+      <ul className="flex flex-row items-center justify-center gap-6 ">
         <Link href="#home" className={navStyle}>
-          Home
+          HOME
         </Link>
         <Link href="#about" className={navStyle}>
-          About
+          ABOUT
         </Link>
-        <Link href="#work" className={navStyle}>
-          Work
+        <Link href="#projects" className={navStyle}>
+          PROJECTS
+        </Link>
+        <Link href="#skills" className={navStyle}>
+          SKILLS
+        </Link>
+        <Link href="#footer" className={navStyle}>
+          CONTACTS
         </Link>
       </ul>
     </div>
