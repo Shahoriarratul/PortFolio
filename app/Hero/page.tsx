@@ -11,10 +11,10 @@ export default function Hero() {
       id="hero"
       className="relative flex h-screen w-full flex-col items-center justify-start border-b-4 border-black "
     >
-      <div className=" h-[600px] w-[600px] ">
+      <div className=" h-[650px] w-[650px] ">
         <Canvas />
       </div>
-      <div className=" text mx-48 mb-10 mt-[-30px] flex  w-[60vw] flex-col items-center px-12 text-center text-2xl font-medium !leading-[1.5] sm:text-4xl">
+      <div className="mx-48 mb-10 mt-[-30px] flex  w-[60vw] flex-col items-center px-12 text-right text-2xl font-medium !leading-[1.5] sm:text-4xl">
         <div className="mb-10  flex items-center justify-center">
           <Image
             src="/potrait.jpeg"
