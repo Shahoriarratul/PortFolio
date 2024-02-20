@@ -1,13 +1,12 @@
 "use client";
 import React, { useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
 import { clearScreenDown } from "readline";
 import { Application } from "@splinetool/runtime";
 
 export default function Canvas() {
   useEffect(() => {
     const canvas: HTMLCanvasElement | null = document.getElementById(
-      "canvas3d"
+      "canvas3d",
     ) as HTMLCanvasElement;
     if (canvas) {
       const app = new Application(canvas);

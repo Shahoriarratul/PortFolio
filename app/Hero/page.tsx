@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import Canvas from "../components/Canvas";
 import Image from "next/image";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { PropagateLoader } from "react-spinners";
 
 // border-4 border-white
 export default function Hero() {
@@ -14,7 +15,9 @@ export default function Hero() {
       className="relative flex h-screen w-full flex-col items-center justify-start border-b-4 border-black "
     >
       <div className=" mb-[-7vh] h-[35vw] w-[35vw]">
-        <Canvas />
+        <Suspense fallback={<PropagateLoader color="#fff" />}>
+          <Canvas />
+        </Suspense>
       </div>
       <div className="mx-48 mb-10 flex w-[60vw] flex-col items-center px-12 text-right text-2xl font-thin !leading-[1.5] sm:text-3xl">
         <div className=" mb-10 flex items-center justify-center">
@@ -51,7 +54,7 @@ export default function Hero() {
           </Link>
           <a
             className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-xl outline-none transition hover:scale-110 hover:bg-violet-800/50 focus:scale-105 active:scale-105 dark:bg-white/10"
-            href="/Shahoriar-Ratul-CV.pdf"
+            href="/Shahoriar_Ratul_CV.pdf"
             download
           >
             Download CV <HiDownload className="opacity-60 transition" />
