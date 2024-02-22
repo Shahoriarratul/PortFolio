@@ -32,8 +32,8 @@ export default function About() {
           {" "}
           I use GSAP , Framer motion and motion js to animate my webiste
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
+        . I am also familiar with TypeScript , Prisma and next -auth. I am
+        always looking to learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
