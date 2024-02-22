@@ -28,7 +28,7 @@ export default function Hero() {
             height="180"
             quality="95"
             priority={true}
-            className=" mr-10 h-[15vh] w-[15vh] rounded-full border-[0.35rem] border-white object-cover shadow-xl sm:w-[7.5vw]  "
+            className=" mr-10 h-[15vh] w-[15vh] rounded-full border-[0.35rem] border-white object-cover shadow-xl sm:w-[7.5vw] md:w-[15vh]  "
           />
           <h1 className="mt-5 text-center sm:text-left">
             <span className="font-bold"> Hello, I&apos;m Ratul.</span> I&apos;m
