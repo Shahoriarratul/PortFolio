@@ -53,7 +53,7 @@ export default function Hero() {
             </span>
           </Link>
           <a
-            className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-xl outline-none transition hover:scale-110 hover:bg-violet-800/50 focus:scale-105 active:scale-105 dark:bg-white/10"
+            className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-xl outline-none transition duration-300 hover:scale-110 hover:bg-violet-800/50 focus:scale-105 active:scale-105 dark:bg-white/10"
             href="/Shahoriar_Ratul_CV.pdf"
             download
           >
