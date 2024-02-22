@@ -1,3 +1,4 @@
+"use client";
 import React, { EventHandler, FormEvent } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
