@@ -14,25 +14,25 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="flex h-[60vh] w-full flex-col justify-between border-t-4 border-gray-500 sm:flex-row"
+      className="flex h-full w-full flex-col justify-between border-t-4 border-gray-500 sm:h-[60vh] sm:flex-row"
     >
       <div className=" sm:basis-1/2">
         <form
           onSubmit={handleSubmit}
-          className="flex h-full flex-col items-center justify-center space-y-4 text-xl"
+          className="flex h-full flex-col items-center justify-center space-y-4 text-lg"
         >
-          <div className=" text-4xl">CONTACT ME</div>
-          <div className=" text- ">
+          <div className=" text-4xl text-violet-300">CONTACT ME</div>
+          <div className=" mb-10 text-gray-300 ">
             Please contact me directly to my email{" "}
             <span className=" underline">shahoriar.ratul#gamil.com</span>
           </div>
           <Input
             placeholder="Your Email"
-            className=" w-[30vw] border-gray-600 bg-black text-start"
+            className=" w-[80%] border-gray-600 bg-black text-start sm:w-[30vw]"
           />
           <Textarea
             placeholder="Your message.."
-            className=" h-[15vh] w-[30vw] border-gray-600 bg-black"
+            className="h-[15vh] w-[80%] border-gray-600 bg-black sm:w-[30vw]"
           />
           <button
             type="submit"
@@ -50,7 +50,7 @@ export default function Footer() {
           </button>
         </form>
       </div>
-      <div className=" space-y-32 p-10 py-32 sm:basis-1/2">
+      <div className="space-y-[10%] p-10 py-32 sm:basis-1/2 sm:space-y-[15%]">
         <p className=" text-lg">
           <span className="font-semibold">About this website : </span> built
           with React & Next.js (App Router & Server Actions), TypeScript,
