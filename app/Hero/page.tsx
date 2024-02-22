@@ -19,7 +19,7 @@ export default function Hero() {
           <Canvas />
         </Suspense>
       </div>
-      <div className="mx-48 mb-10 flex w-[90vw] flex-col items-center px-12 text-center text-lg font-thin !leading-[1.5] sm:w-[60vw] sm:text-right sm:text-3xl">
+      <div className="mx-48 mb-10 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:w-[60vw] sm:text-right sm:text-3xl">
         <div className=" mb-10 flex flex-col items-center justify-center sm:flex-row">
           <Image
             src="/potrait.jpeg"
