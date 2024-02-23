@@ -14,7 +14,7 @@ export default function Hero() {
       id="hero"
       className="relative flex h-screen w-full flex-col items-center justify-start"
     >
-      <div className=" mr-[10vh] h-[40vh] w-full sm:mb-[-7vh] sm:h-[35vw] sm:w-[35vw]">
+      <div className=" mr-[5vh] h-[40vh] w-full sm:mb-[-7vh] sm:h-[35vw] sm:w-[35vw]">
         <Suspense fallback={<PropagateLoader color="#fff" />}>
           <Canvas />
         </Suspense>
@@ -28,7 +28,7 @@ export default function Hero() {
             height="180"
             quality="95"
             priority={true}
-            className=" mr-10 h-[15vh] w-[15vh] rounded-full border-[0.35rem] border-white object-cover shadow-xl sm:w-[7.5vw] md:w-[15vh]  "
+            className=" h-[15vh] w-[15vh] rounded-full border-[0.35rem] border-white object-cover shadow-xl sm:mr-10 sm:w-[7.5vw] md:w-[15vh]  "
           />
           <h1 className="mt-5 text-center sm:text-left">
             <span className="font-bold"> Hello, I&apos;m Ratul.</span> I&apos;m
