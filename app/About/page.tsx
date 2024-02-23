@@ -4,9 +4,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex h-screen w-full flex-col items-center justify-center border-b-4 border-black text-justify sm:w-full"
+      className=" flex h-screen w-full flex-col items-center justify-center text-justify sm:w-full"
     >
-      <div className="w-[80%] text-center sm:w-[65%]  sm:text-2xl">
+      <div className="z-20 w-[80%] text-center  sm:w-[65%] sm:text-2xl">
         <p className="mb-8 text-center text-3xl font-medium capitalize sm:text-5xl ">
           About me
         </p>
@@ -56,6 +56,7 @@ export default function About() {
           .
         </p>
       </div>
+      <div className=" absolute z-10 h-screen w-full bg-gradient-to-tr from-[rgba(108,0,162,0.51)] to-[rgba(0,16,82,0.45)]"></div>
     </div>
   );
 }

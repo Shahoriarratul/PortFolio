@@ -7,8 +7,8 @@ import { useFormStatus } from "react-dom";
 
 export default function Footer() {
   const { pending } = useFormStatus();
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault;
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     alert(" email sent");
   }
   return (
@@ -21,18 +21,20 @@ export default function Footer() {
           onSubmit={handleSubmit}
           className="flex h-full flex-col items-center justify-center space-y-4 text-lg"
         >
-          <div className=" text-4xl text-violet-300">CONTACT ME</div>
-          <div className=" mb-10 text-gray-300 ">
+          <div className=" p-4 text-center text-4xl text-violet-300">
+            CONTACT ME
+          </div>
+          <div className=" p-2 text-gray-300 ">
             Please contact me directly to my email{" "}
             <span className=" underline">shahoriar.ratul#gamil.com</span>
           </div>
           <Input
             placeholder="Your Email"
-            className=" w-[80%] border-gray-600 bg-black text-start sm:w-[30vw]"
+            className=" w-[80%] border-gray-600 bg-black text-start sm:w-[32vw]"
           />
           <Textarea
             placeholder="Your message.."
-            className="h-[15vh] w-[80%] border-gray-600 bg-black sm:w-[30vw]"
+            className="h-[15vh] w-[80%] border-gray-600 bg-black sm:w-[32vw]"
           />
           <button
             type="submit"

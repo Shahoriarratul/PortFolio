@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Technology() {
+export default function Skills() {
   return (
     <div
-      id="skills"
+      id="Skills"
       className="flex h-screen w-full flex-col items-center justify-center border-b-4 border-black"
     >
-      <h1>Technology</h1>
+      <h1>Skills</h1>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useRef } from "react";
-import Canvas from "../components/Canvas";
+import Canvas from "../../components/Canvas";
 import Image from "next/image";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="relative flex h-screen w-full flex-col items-center justify-start border-b-4 border-black "
+      className="relative flex h-screen w-full flex-col items-center justify-start"
     >
       <div className=" mr-[10vh] h-[40vh] w-full sm:mb-[-7vh] sm:h-[35vw] sm:w-[35vw]">
         <Suspense fallback={<PropagateLoader color="#fff" />}>
