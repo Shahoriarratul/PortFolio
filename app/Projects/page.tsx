@@ -1,5 +1,4 @@
 import ProjectCard from "@/components/ProjectCard";
-import Image from "next/image";
 import React from "react";
 
 export default function Work() {
