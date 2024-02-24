@@ -20,7 +20,7 @@ const asap = Asap({
 export default function Home() {
   return (
     <main
-      className={` flex flex-col items-center bg-[#070307] text-white ${asap.className}`}
+      className={` flex flex-col items-center bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] text-white ${asap.className}`}
     >
       <Header />
       <Hero />

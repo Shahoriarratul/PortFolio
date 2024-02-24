@@ -11,7 +11,7 @@
   "dependencies": {
     "@next/font": "^14.1.0",
     "@radix-ui/react-switch": "^1.0.3",
-    "@splinetool/runtime": "^1.0.51",
+    "@splinetool/react-spline": "^2.2.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.3",

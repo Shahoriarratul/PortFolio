@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Spline from "@splinetool/react-spline";
 
 export default function Skills() {
   return (
     <div
       id="Skills"
-      className="flex h-screen w-full flex-col items-center justify-center border-b-4 border-black"
+      className="flex h-screen w-full flex-col items-center justify-center"
     >
-      <h1>Skills</h1>
+      <div className=" h-[80vh] w-full  ">
+        <Spline scene="https://prod.spline.design/c040WGtElTcDEf88/scene.splinecode" />
+      </div>
     </div>
   );
 }

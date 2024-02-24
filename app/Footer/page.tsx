@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="flex h-full w-full flex-col justify-between border-t-4 border-gray-500 sm:h-[60vh] sm:flex-row"
+      className="justify-betwee flex h-full w-full flex-col sm:h-[60vh] sm:flex-row"
     >
       <div className=" sm:basis-1/2">
         <form
@@ -30,11 +30,11 @@ export default function Footer() {
           </div>
           <Input
             placeholder="Your Email"
-            className=" w-[80%] border-gray-600 bg-black text-start sm:w-[32vw]"
+            className=" w-[80%] border-gray-600 bg-slate-100/10 text-start sm:w-[32vw]"
           />
           <Textarea
             placeholder="Your message.."
-            className="h-[15vh] w-[80%] border-gray-600 bg-black sm:w-[32vw]"
+            className="h-[15vh] w-[80%] border-gray-600 bg-slate-100/10 sm:w-[32vw]"
           />
           <button
             type="submit"

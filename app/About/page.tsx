@@ -57,7 +57,9 @@ export default function About() {
           .
         </p>
       </div>
-      <div className=" absolute z-10 h-screen w-full bg-gradient-to-tr from-[rgba(108,0,162,0.51)] to-[rgba(0,16,82,0.45)]"></div>
+      <div className="absolute z-10 h-screen w-full">
+        <div className="absolute bottom-auto left-auto right-0 top-0 h-[750px] w-[900px] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px] sm:right-[50vh] sm:top-[10vh]"></div>
+      </div>
     </div>
   );
 }
