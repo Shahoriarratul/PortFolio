@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Spline from "@splinetool/react-spline";
 
 export default function Skills() {

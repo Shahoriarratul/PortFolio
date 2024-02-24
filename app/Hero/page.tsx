@@ -1,10 +1,9 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { PropagateLoader } from "react-spinners";
 import Spline from "@splinetool/react-spline";
 
 // border-4 border-white
