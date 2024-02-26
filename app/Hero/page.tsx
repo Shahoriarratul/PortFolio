@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -17,7 +17,7 @@ export default function Hero() {
       <div className=" mr-[5vh] h-[40vh] w-full sm:mb-[-7vh] sm:h-[35vw] sm:w-[35vw]">
         <Spline scene="https://prod.spline.design/d-mvfO2CGrqE6Oxw/scene.splinecode" />
       </div>
-      <div className="mx-48 mb-10 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:w-[60vw] sm:text-right sm:text-3xl">
+      <div className="mx-48 mb-10 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:w-[60vw] sm:text-right sm:text-2xl md:w-[60vw] md:text-3xl">
         <div className=" mb-10 flex flex-col items-center justify-center sm:flex-row">
           <Image
             src="/potrait.jpeg"
