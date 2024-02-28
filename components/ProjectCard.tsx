@@ -9,7 +9,6 @@ type propType = {
 export default function ProjectCard(prop: propType) {
   function handleClick(e: React.MouseEvent<HTMLDivElement>) {
     e.preventDefault;
-    alert(`${prop.children} is clicked`);
   }
 
   return (
