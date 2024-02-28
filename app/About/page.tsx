@@ -7,7 +7,7 @@ export default function About() {
       id="about"
       className=" flex h-screen w-full flex-col items-center justify-center text-justify sm:w-full"
     >
-      <div className="z-20 w-[80%] text-center  sm:w-[65%] sm:text-2xl">
+      <div className="z-20 w-[80%] rounded-3xl bg-gradient-to-tr from-white/10 from-10% via-transparent via-50% to-white/10 to-80% text-center backdrop-blur-[2px] sm:w-[65%] sm:p-20 sm:text-2xl">
         <p className="mb-8 text-center text-3xl font-medium capitalize sm:text-5xl ">
           About me
         </p>

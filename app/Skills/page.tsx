@@ -15,13 +15,13 @@ const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
+  "C#",
+  ".net",
+  "GSAP",
   "Framer Motion",
+  "motion.js",
 ];
 const fadeInAnimationVariants = {
   initial: {
@@ -46,12 +46,14 @@ export default function Skills() {
       <div className=" absolute z-0 h-[80vh] w-full  ">
         <Spline scene="https://prod.spline.design/c040WGtElTcDEf88/scene.splinecode" />
       </div>
-      <div className=" p-4 text-center text-4xl text-violet-300">SKILLS</div>
+      <div className=" z-10 mb-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text p-4 text-center text-6xl text-transparent ">
+        SKILLS
+      </div>
       <div className="z-10 sm:w-[60vw]">
-        <ul className="flex  flex-wrap justify-center gap-2 text-lg text-white">
+        <ul className="flex flex-wrap justify-center gap-2  text-lg text-white">
           {skillsData.map((skill, index) => (
             <motion.li
-              className="borderBlack rounded-xl bg-violet-400/15 px-5 py-3 dark:bg-white/10 dark:text-white/80"
+              className=" rounded-xl bg-gradient-to-tr from-violet-300/20 via-transparent via-60% to-violet-300/20 to-100% px-5 py-3 backdrop-blur-sm transition-all duration-300 hover:scale-125 dark:bg-white/10 dark:text-white/80 sm:m-5 "
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
