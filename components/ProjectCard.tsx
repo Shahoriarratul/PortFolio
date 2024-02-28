@@ -13,11 +13,12 @@ export default function ProjectCard(prop: propType) {
   const router = useRouter();
   function handleClick(e: React.MouseEvent<HTMLDivElement>) {
     e.preventDefault;
-    router.push(prop.link);
+
+    window.open(prop.link, "_blank");
   }
 
   return (
-    <div className=" mt-3 flex h-[35vh] w-[80vw] flex-col items-center rounded-xl bg-[rgba(248,250,252,.08)] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2 ">
+    <div className=" mt-3 flex h-[35vh] w-[80vw] flex-col items-center rounded-xl bg-gradient-to-tr from-white/5 from-10% via-transparent via-50% to-white/5 to-80% backdrop-blur-[3px] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2 ">
       <Image
         src={prop.src}
         onClick={handleClick}
