@@ -6,6 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { useFormStatus } from "react-dom";
 
 import { Resend } from "resend";
+import { sendEmail } from "@/components/sendmail";
+
+const resend = new Resend("re_KnBU9U4Z_5TxRyx8Sa5HG9USjRuS7r1BH");
 
 export default function Footer() {
   const [email, setEamil] = useState<string>("");
@@ -14,18 +17,8 @@ export default function Footer() {
   const { pending } = useFormStatus();
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    const data = await fetch("/api/send");
-
-    console.log(data);
-
-    // await fetch("/api/email", {
-    //   method: "POST",
-    //   body: JSON.stringify({
-    //     email: email,
-    //     body: body,
-    //   }),
-    // });
+    await sendEmail({ email, body });
+    alert("email sent");
   }
   return (
     <div
