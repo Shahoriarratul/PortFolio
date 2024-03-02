@@ -5,7 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useFormStatus } from "react-dom";
 
+import { Resend } from "resend";
+
 export default function Footer() {
+  const resend = new Resend("re_c11xqe62_3vs1CtxtyR3DKAC8yHZWSXv6");
   const { pending } = useFormStatus();
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -26,13 +29,15 @@ export default function Footer() {
           </div>
           <div className=" p-2 text-center text-gray-300 sm:text-left ">
             Please contact me directly to my email{" "}
-            <span className=" underline">shahoriar.ratul#gamil.com</span>
+            <span className=" underline">shahoriar.ratul@gamil.com</span>
           </div>
           <Input
             placeholder="Your Email"
+            name="SenderMail"
             className=" w-[80%] border-gray-600 bg-slate-100/10 text-start sm:w-[32vw]"
           />
           <Textarea
+            name="textMail"
             placeholder="Your message.."
             className="h-[15vh] w-[80%] border-gray-600 bg-slate-100/10 sm:w-[32vw]"
           />
