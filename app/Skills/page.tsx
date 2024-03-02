@@ -44,7 +44,7 @@ export default function Skills() {
       className="flex h-screen w-full flex-col items-center justify-center"
     >
       <div className=" absolute z-0 h-[80vh] w-full  ">
-        <Spline scene="https://prod.spline.design/c040WGtElTcDEf88/scene.splinecode" />
+        {/* <Spline scene="https://prod.spline.design/c040WGtElTcDEf88/scene.splinecode" /> */}
       </div>
       <div className=" z-10 mb-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text p-4 text-center text-6xl text-transparent ">
         SKILLS

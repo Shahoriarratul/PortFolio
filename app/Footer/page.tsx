@@ -1,5 +1,5 @@
 "use client";
-import React, { EventHandler, FormEvent } from "react";
+import React, { EventHandler, FormEvent, useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,11 +8,24 @@ import { useFormStatus } from "react-dom";
 import { Resend } from "resend";
 
 export default function Footer() {
-  const resend = new Resend("re_c11xqe62_3vs1CtxtyR3DKAC8yHZWSXv6");
+  const [email, setEamil] = useState<string>("");
+  const [body, setBody] = useState<string>("");
+
   const { pending } = useFormStatus();
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    alert(" email sent");
+
+    const data = await fetch("/api/send");
+
+    console.log(data);
+
+    // await fetch("/api/email", {
+    //   method: "POST",
+    //   body: JSON.stringify({
+    //     email: email,
+    //     body: body,
+    //   }),
+    // });
   }
   return (
     <div
@@ -34,10 +47,12 @@ export default function Footer() {
           <Input
             placeholder="Your Email"
             name="SenderMail"
+            onChange={(e) => setEamil(e.target.value)}
             className=" w-[80%] border-gray-600 bg-slate-100/10 text-start sm:w-[32vw]"
           />
           <Textarea
             name="textMail"
+            onChange={(e) => setBody(e.target.value)}
             placeholder="Your message.."
             className="h-[15vh] w-[80%] border-gray-600 bg-slate-100/10 sm:w-[32vw]"
           />
