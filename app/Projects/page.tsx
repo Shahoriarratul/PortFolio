@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import { Tailwind } from "@react-email/components";
 import React from "react";
 
 export default function Work() {
@@ -11,18 +12,27 @@ export default function Work() {
         <ProjectCard
           link="https://fast-pizza-sigma.vercel.app/"
           src="/project 1.png"
+          tech={["react", "Tailwind", "styled.component"]}
+          name="Fast Pizza - Pizza to your door step"
+          gitLink="https://github.com/Shahoriarratul/Fast-Pizza"
         >
           Project 1
         </ProjectCard>
         <ProjectCard
           link="https://use-pop-corn-ebon.vercel.app/"
           src="/project 2.png"
+          tech={["react", "Tailwind", "styled.component"]}
+          name="PopCorn - Rate your movies"
+          gitLink="https://github.com/Shahoriarratul/usePopCorn"
         >
           Project 2
         </ProjectCard>
         <ProjectCard
           link="https://travel-list-lovat.vercel.app/"
           src="/project 3.png"
+          tech={["react", "Tailwind", "styled.component"]}
+          name="Travel List - Easy travel bucket"
+          gitLink="https://github.com/Shahoriarratul/travel-list"
         >
           Project 3
         </ProjectCard>
