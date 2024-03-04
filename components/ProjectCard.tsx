@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { FaGithub, FaArrowRight } from "react-icons/fa6";
+import { FaLink, FaArrowRight } from "react-icons/fa6";
 
 import React from "react";
 import Link from "next/link";
@@ -33,7 +33,7 @@ export default function ProjectCard(prop: propType) {
         className=" absolute bottom-2 right-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm sm:text-lg"
       >
         <span className="">CHECK OUT THE CODE</span>
-        <FaArrowRight size={30} className="text-violet-600" />
+        <FaLink size={30} className="text-violet-600" />
       </div>
       <Image
         src={prop.src}
