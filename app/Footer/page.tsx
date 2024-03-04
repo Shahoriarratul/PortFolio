@@ -4,11 +4,7 @@ import { FaPaperPlane } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useFormStatus } from "react-dom";
-
-import { Resend } from "resend";
 import { sendEmail } from "@/components/sendmail";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default function Footer() {
   const [email, setEamil] = useState<string>("");

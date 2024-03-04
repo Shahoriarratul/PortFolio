@@ -4,7 +4,9 @@ import React from "react";
 import { Resend } from "resend";
 import { emailTemp } from "@/components/email-template";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resendAPI = process.env.RESEND_API_KEY;
+
+const resend = new Resend(resendAPI);
 type propType = {
   email: string;
   body: string;
