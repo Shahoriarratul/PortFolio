@@ -8,7 +8,7 @@ import { useFormStatus } from "react-dom";
 import { Resend } from "resend";
 import { sendEmail } from "@/components/sendmail";
 
-const resend = new Resend("re_KnBU9U4Z_5TxRyx8Sa5HG9USjRuS7r1BH");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default function Footer() {
   const [email, setEamil] = useState<string>("");
