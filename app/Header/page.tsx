@@ -18,7 +18,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className=" fixed z-50 mt-5 hidden h-16 w-[50vw]  flex-row items-stretch justify-center rounded-full bg-violet-800/25 bg-opacity-45 p-5 text-white  shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out hover:bg-opacity-60 sm:flex xl:contents ">
+      <div className="fixed z-50 mt-5 hidden h-16 w-[50vw]  flex-row items-stretch justify-center rounded-full bg-violet-800/25 bg-opacity-45 p-5 text-white  shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out hover:bg-opacity-60 sm:visible sm:flex ">
         <ul className="flex flex-row items-center justify-center gap-6 ">
           <Link href="#home" className={navStyle}>
             HOME
@@ -40,7 +40,7 @@ export default function Header() {
 
       <button
         onClick={() => setIsOpen(true)}
-        className={` ${!isOpen ? "content" : "hidden"} fixed right-3 top-3 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-violet-800/30 bg-opacity-45 p-2 xl:hidden`}
+        className={` ${!isOpen ? "content" : "hidden"} xl fixed right-3 top-3 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-violet-800/30 bg-opacity-45 p-2 lg:hidden`}
       >
         <HiOutlineMenu className=" h-10 w-10" />
       </button>
