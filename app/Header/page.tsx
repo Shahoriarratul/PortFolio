@@ -18,8 +18,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="fixed z-50 mt-5 hidden h-16 w-[50vw]  flex-row items-stretch justify-center rounded-full bg-violet-800/25 bg-opacity-45 p-5 text-white  shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out hover:bg-opacity-60 sm:visible sm:flex ">
-        <ul className="flex flex-row items-center justify-center gap-6 ">
+      <div className="fixed z-50 mt-5 hidden h-16 w-[50vw]  flex-row items-stretch justify-center rounded-full bg-violet-800/25 bg-opacity-45 p-5 text-white  shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out hover:bg-opacity-60 lg:visible lg:flex ">
+        <ul className="flex flex-row items-center justify-center gap-[2vw] ">
           <Link href="#home" className={navStyle}>
             HOME
           </Link>
@@ -46,7 +46,7 @@ export default function Header() {
       </button>
 
       <div
-        className={` fixed right-0 top-0 z-40 flex h-screen flex-col justify-between ${isOpen ? "" : "translate-x-[100%]"} rounded-l-3xl bg-violet-400/60 shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out sm:hidden`}
+        className={` fixed right-0 top-0 z-40 flex h-screen flex-col justify-between ${isOpen ? "" : "translate-x-[100%]"} rounded-l-3xl bg-violet-400/60 shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out lg:hidden`}
       >
         <ul className="  my-5 flex flex-col items-center justify-center gap-6 ">
           <Link href="#home" className={navStyle}>
