@@ -1,6 +1,7 @@
 "use client";
 import Spline from "@splinetool/react-spline";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const skillsData = [
   "HTML",
@@ -38,15 +39,28 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 640); // Adjust this threshold as needed
+    }
+
+    handleResize(); // Call it initially to set the state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setIsMobile]);
   return (
     <div
       id="Skills"
       className="flex h-screen w-full flex-col items-center justify-center"
     >
-      <div className=" absolute z-0 h-[80vh] w-full  ">
-        <Spline scene="https://prod.spline.design/c040WGtElTcDEf88/scene.splinecode" />
-      </div>
-      <div className=" z-10 mb-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text p-4 text-center text-6xl text-transparent ">
+      {!isMobile && (
+        <div className=" absolute z-0 h-[80vh] w-full  ">
+          <Spline scene="https://prod.spline.design/c040WGtElTcDEf88/scene.splinecode" />
+        </div>
+      )}
+
+      <div className=" z-10 mb-10 mt-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text p-4 text-center text-6xl text-transparent ">
         SKILLS
       </div>
       <div className="z-10 sm:w-[60vw]">

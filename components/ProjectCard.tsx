@@ -45,12 +45,12 @@ export default function ProjectCard(prop: propType) {
       ></Image>
       <div className=" w-full p-1 sm:flex sm:h-full sm:w-full sm:flex-col sm:items-start sm:justify-start sm:p-3 sm:text-base">
         <div className="w-full py-1 text-sm font-bold text-white ">
-          <h1 className="sm:text-3xl sm:font-extrabold">{prop.name}</h1>
+          <h1 className="sm:text-2xl sm:font-extrabold">{prop.name}</h1>
         </div>
         <ul className="flex flex-row flex-wrap gap-3 py-2">
           {prop.tech.map((e) => (
             <li
-              className=" text-bold rounded-full bg-white/10 px-2 text-sm text-violet-300 sm:text-base"
+              className=" text-bold rounded-full bg-white/10 px-2 text-sm text-violet-300 sm:text-sm "
               key={e}
             >
               {e}
