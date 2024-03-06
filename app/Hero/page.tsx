@@ -32,7 +32,7 @@ export default function Hero() {
 
       <div className="mx-48 mb-10 mt-52 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:mt-20 sm:w-[90vw] sm:text-right sm:text-base md:w-[80vw] md:text-xl ">
         <div className=" mb-10 flex flex-col items-center justify-center sm:flex-row md:mt-12 ">
-          <div className=" relative h-[15vh] w-[15vh] sm:mr-5 sm:mt-5 sm:h-[100%] sm:w-[30%]">
+          <div className=" relative flex h-[15vh] w-[15vh] items-center justify-center sm:mr-5 sm:mt-5 sm:h-[100%] sm:w-[30%]">
             <Image
               src="/potrait.jpeg"
               alt="Shahoriar Ratul"
@@ -40,9 +40,9 @@ export default function Hero() {
               height="280"
               quality="95"
               priority={true}
-              className=" absolute left-0 top-0 z-20 h-[15vh] w-[15vh] rounded-full border-[0.20rem] border-white object-cover shadow-xl transition-all duration-200  ease-in-out sm:h-24 sm:w-24"
+              className=" absolute z-20 h-[15vh] w-[15vh] rounded-full border-[0.20rem] border-white object-cover shadow-xl transition-all duration-200  ease-in-out sm:h-24 sm:w-24"
             />
-            <div className="absolute -inset-4 left-0 top-0 z-10 animate-spin rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 blur-md "></div>
+            <div className="absolute -inset-4 z-10 animate-spin rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 blur-md "></div>
           </div>
           <h1 className="mt-8 w-[100%] text-center sm:text-left">
             <span className="font-bold"> Hello, I&apos;m Ratul.</span> I&apos;m
