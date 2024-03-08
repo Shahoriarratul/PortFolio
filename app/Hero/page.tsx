@@ -28,7 +28,7 @@ export default function Hero() {
     >
       {!isMobile && <Hero3d />}
 
-      <div className="mx-48 mb-10 mt-52 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:mt-0 sm:w-[90vw]  sm:text-right sm:text-base md:w-[80vw] md:text-xl  lg:text-2xl xl:text-3xl 2xl:w-[70vw] ">
+      <div className="mx-48 mb-10 mt-44 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:mt-0 sm:w-[90vw]  sm:text-right sm:text-base md:w-[80vw] md:text-xl  lg:text-2xl xl:text-3xl 2xl:w-[70vw] ">
         <div className=" mb-10 flex flex-col items-center justify-center sm:flex-row  md:mt-12">
           <div className=" relative flex h-[15vh] w-[15vh]  items-center justify-center sm:mr-5 sm:mt-5 sm:h-[100%] sm:w-[30%] 2xl:mr-0">
             <Image
