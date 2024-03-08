@@ -5,8 +5,8 @@ import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import Spline from "@splinetool/react-spline";
 import Hero3d from "@/components/Hero3d";
+import { SlArrowDown } from "react-icons/sl";
 
 // border-4 border-white
 export default function Hero() {
@@ -54,7 +54,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        <div className="flex h-12 flex-col gap-5 sm:text-sm lg:flex-row lg:text-base">
+        <div className="flex h-12 flex-col gap-5 sm:text-sm lg:flex-row lg:text-base 2xl:mt-2">
           <Link
             href="#footer"
             className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-center text-xs text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-violet-800/50 focus:scale-105 active:scale-105 sm:text-xs lg:text-base 2xl:text-xl"
@@ -71,7 +71,7 @@ export default function Hero() {
           >
             Download CV <HiDownload className="opacity-60 transition" />
           </a>
-          <div className="mt-6 flex flex-row items-center justify-center gap-5 lg:mt-0">
+          <div className="mt-6 flex  flex-row items-center justify-center gap-5 md:mt-0 ">
             <a
               className=" flex cursor-pointer items-center gap-2  rounded-full p-2 text-white transition hover:scale-[1.15] hover:text-violet-200/50 focus:scale-[1.15] active:scale-105
                dark:bg-white/10 dark:text-white/60
@@ -79,18 +79,24 @@ export default function Hero() {
               href="https://www.linkedin.com/in/shahoriar-ratul"
               target="_blank"
             >
-              <FaLinkedin className=" h-12 w-12 lg:h-10 lg:w-10" />
+              <FaLinkedin className=" h-10 w-10" />
             </a>
             <a
               className="  flex cursor-pointer items-center gap-2 rounded-full  p-2 text-white transition hover:scale-[1.15] hover:text-violet-200/50  focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
               href="https://github.com/Shahoriarratul"
               target="_blank"
             >
-              <FaGithubSquare className=" h-12 w-12 lg:h-10 lg:w-10" />
+              <FaGithubSquare className=" h-10 w-10" />
             </a>
           </div>
         </div>
       </div>
+      <Link
+        href="#about"
+        className=" absolute bottom-5 flex h-12 w-12 animate-bounce items-center justify-center rounded-full bg-violet-600/20 shadow-md shadow-blue-800/50 ring-1 ring-slate-300/70"
+      >
+        <SlArrowDown className="text-white" />
+      </Link>
     </div>
   );
 }
