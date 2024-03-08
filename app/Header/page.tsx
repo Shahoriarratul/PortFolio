@@ -5,7 +5,7 @@ import React, { EventHandler, useRef, useState } from "react";
 
 import { Goldman } from "next/font/google";
 import { HiOutlineMenu } from "react-icons/hi";
-import { MdOutlineArrowBackIos } from "react-icons/md";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const goldman = Goldman({
   subsets: ["latin", "latin-ext"],
@@ -13,7 +13,7 @@ const goldman = Goldman({
 });
 
 const navStyle =
-  "transition duration-500 ease-in-out rounded-full hover:underline hover:underline-offset-2 p-[0.5vw] ";
+  "transition duration-500 ease-in-out rounded-full hover:text-bold p-[0.5vw] hover:font-bold";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -40,14 +40,20 @@ export default function Header() {
 
       <button
         onClick={() => setIsOpen(true)}
-        className={` ${!isOpen ? "content" : "hidden"} xl fixed right-3 top-3 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-violet-800/30 bg-opacity-45 p-2 lg:hidden`}
+        className={` ${!isOpen ? "content" : "hidden"} xl fixed right-3 top-3 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-violet-800/30 bg-opacity-45 p-2 lg:hidden`}
       >
         <HiOutlineMenu className=" h-10 w-10" />
       </button>
 
       <div
-        className={` fixed right-0 top-0 z-40 flex h-screen flex-col justify-between ${isOpen ? "" : "translate-x-[100%]"} rounded-l-3xl bg-violet-400/60 shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out lg:hidden`}
+        className={` fixed right-0 top-0 z-40 flex h-screen w-[25vw] flex-col ${isOpen ? "" : "translate-x-[100%]"} rounded-l-3xl bg-violet-800/25 bg-opacity-45 shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out lg:hidden`}
       >
+        <button
+          onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}
+          className={`${isOpen ? "content" : "hidden"}  absolute m-2 flex h-14 w-14 -translate-x-20 flex-row items-center justify-center rounded-full bg-blue-800/40 p-2`}
+        >
+          <MdOutlineArrowForwardIos size={20} />
+        </button>
         <ul className="  my-5 flex flex-col items-center justify-center gap-6 ">
           <Link href="#home" className={navStyle}>
             HOME
@@ -69,13 +75,6 @@ export default function Header() {
             CONTACTS
           </Link>
         </ul>
-        <button
-          onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}
-          className=" m-2 flex h-16 flex-row items-center justify-center rounded-3xl bg-blue-800/40 p-2"
-        >
-          <MdOutlineArrowBackIos size={20} />
-          <p>BACK</p>
-        </button>
       </div>
     </>
   );
