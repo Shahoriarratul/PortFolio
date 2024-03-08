@@ -7,9 +7,9 @@ export default function About() {
       id="about"
       className=" flex h-screen w-full flex-col items-center justify-center text-justify sm:w-full"
     >
-      <div className="z-20 w-[80%] rounded-3xl bg-gradient-to-tr from-white/10 from-10% via-transparent via-50% to-white/10 to-80% text-center text-sm backdrop-blur-[2px] sm:w-[65%] sm:p-20 sm:text-base">
+      <div className="z-20 w-[80%] rounded-3xl bg-gradient-to-tr from-white/10 from-10% via-transparent via-50% to-white/10 to-80% text-center text-sm backdrop-blur-[2px] sm:w-[65%] sm:p-20 sm:text-base lg:text-xl 2xl:text-2xl">
         <div className=" m-3">
-          <p className="mb-8 mt-5 text-center text-3xl font-medium capitalize sm:text-2xl ">
+          <p className="mb-8 mt-5 text-center text-3xl font-medium capitalize sm:text-3xl ">
             About me
           </p>
           <p className="mb-3">

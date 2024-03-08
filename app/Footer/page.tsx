@@ -29,7 +29,7 @@ export default function Footer() {
           <div className=" p-4 text-center text-4xl text-violet-300">
             CONTACT ME
           </div>
-          <div className=" p-2 text-center text-gray-300 sm:text-left ">
+          <div className=" p-2 text-center text-gray-300">
             Please contact me directly to my email{" "}
             <span className=" underline">shahoriar.ratul@gamil.com</span>
           </div>

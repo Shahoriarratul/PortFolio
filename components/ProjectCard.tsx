@@ -30,7 +30,7 @@ export default function ProjectCard(prop: propType) {
     <div className="relative mt-3 flex h-[35vh] w-[80vw] flex-col items-center rounded-xl bg-gradient-to-tr from-white/5 from-10% via-transparent via-50% to-white/5 to-80% backdrop-blur-[3px] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2 ">
       <div
         onClick={handleGitLink}
-        className=" absolute bottom-2 right-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm sm:text-base"
+        className=" absolute bottom-2 right-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm hover:text-slate-300 sm:text-base 2xl:text-lg"
       >
         <span className="">CHECK OUT THE CODE</span>
         <FaLink size={30} className="text-violet-600" />
@@ -45,12 +45,14 @@ export default function ProjectCard(prop: propType) {
       ></Image>
       <div className=" w-full p-1 sm:flex sm:h-full sm:w-full sm:flex-col sm:items-start sm:justify-start sm:p-3 sm:text-base">
         <div className="w-full py-1 text-sm font-bold text-white ">
-          <h1 className="sm:text-2xl sm:font-extrabold">{prop.name}</h1>
+          <h1 className="sm:text-2xl sm:font-extrabold 2xl:text-3xl">
+            {prop.name}
+          </h1>
         </div>
         <ul className="flex flex-row flex-wrap gap-3 py-2">
           {prop.tech.map((e) => (
             <li
-              className=" text-bold rounded-full bg-white/10 px-2 text-sm text-violet-300 sm:text-sm "
+              className=" text-bold rounded-full bg-white/10 px-2 text-sm text-violet-300 sm:text-sm 2xl:text-base"
               key={e}
             >
               {e}
@@ -58,7 +60,7 @@ export default function ProjectCard(prop: propType) {
           ))}
         </ul>
 
-        <div className="hidden w-full text-xs sm:contents sm:text-sm">
+        <div className="hidden w-full text-xs text-slate-300 sm:contents sm:text-sm 2xl:text-base">
           <p className="px-1">{prop.children}</p>
         </div>
       </div>

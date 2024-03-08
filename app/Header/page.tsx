@@ -13,7 +13,7 @@ const goldman = Goldman({
 });
 
 const navStyle =
-  "transition duration-500 ease-in-out rounded-full hover:underline hover:underline-offset-2 p-4 ";
+  "transition duration-500 ease-in-out rounded-full hover:underline hover:underline-offset-2 p-[0.5vw] ";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
