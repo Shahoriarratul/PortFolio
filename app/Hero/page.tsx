@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="flex h-12 flex-col gap-5 sm:text-sm lg:flex-row lg:text-base">
           <Link
             href="#footer"
-            className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-center text-xs text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-violet-800/50 focus:scale-105 active:scale-105 sm:text-xs lg:text-base"
+            className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-center text-xs text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-violet-800/50 focus:scale-105 active:scale-105 sm:text-xs lg:text-base 2xl:text-xl"
           >
             Contact me here
             <span>
@@ -68,7 +68,7 @@ export default function Hero() {
             </span>
           </Link>
           <a
-            className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-xs outline-none transition duration-300 hover:scale-105 hover:bg-violet-800/50 focus:scale-105 active:scale-105 dark:bg-white/10 sm:text-xs lg:text-base"
+            className=" group flex cursor-pointer items-center gap-2 rounded-full border border-violet-800 bg-opacity-45 px-7 py-3 text-xs outline-none transition duration-300 hover:scale-105 hover:bg-violet-800/50 focus:scale-105 active:scale-105 dark:bg-white/10 sm:text-xs lg:text-base 2xl:text-xl"
             href="/Shahoriar_Ratul_CV.pdf"
             download
           >

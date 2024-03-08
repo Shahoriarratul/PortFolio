@@ -7,7 +7,7 @@ export default function About() {
       id="about"
       className=" flex h-screen w-full flex-col items-center justify-center text-justify sm:w-full"
     >
-      <div className="z-20 w-[80%] rounded-3xl bg-gradient-to-tr from-white/10 from-10% via-transparent via-50% to-white/10 to-80% text-center text-sm backdrop-blur-[2px] sm:w-[65%] sm:p-20 sm:text-base lg:text-xl 2xl:text-2xl">
+      <div className="z-20 w-[80%] rounded-3xl bg-gradient-to-tr from-white/10 from-10% via-transparent via-50% to-white/10 to-80% text-center text-sm backdrop-blur-[2px] sm:w-[65%] sm:p-10 sm:text-base lg:text-xl 2xl:text-2xl">
         <div className=" m-3">
           <p className="mb-8 mt-5 text-center text-3xl font-medium capitalize sm:text-3xl ">
             About me
@@ -59,8 +59,8 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="absolute z-10 h-screen w-full">
-        <div className="absolute bottom-auto top-10 h-[80vh] w-[80vw] overflow-hidden rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px] sm:right-[50vh] sm:top-[10vh]"></div>
+      <div className="absolute z-10 flex h-screen w-full items-center justify-center">
+        <div className=" bottom-auto h-[70vh] w-[70vw] overflow-hidden rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]  sm:top-10"></div>
       </div>
     </div>
   );
