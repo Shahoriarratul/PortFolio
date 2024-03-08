@@ -71,7 +71,7 @@ export default function Hero() {
           >
             Download CV <HiDownload className="opacity-60 transition" />
           </a>
-          <div className="mt-16 flex flex-row items-center justify-center gap-5 lg:mt-0">
+          <div className="mt-6 flex flex-row items-center justify-center gap-5 lg:mt-0">
             <a
               className=" flex cursor-pointer items-center gap-2  rounded-full p-2 text-white transition hover:scale-[1.15] hover:text-violet-200/50 focus:scale-[1.15] active:scale-105
                dark:bg-white/10 dark:text-white/60
