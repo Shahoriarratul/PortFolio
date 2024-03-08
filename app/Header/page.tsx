@@ -46,7 +46,7 @@ export default function Header() {
       </button>
 
       <div
-        className={` fixed right-0 top-0 z-40 flex h-screen w-[25vw] flex-col ${isOpen ? "" : "translate-x-[100%]"} rounded-l-3xl bg-violet-800/25 bg-opacity-45 shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out lg:hidden`}
+        className={` fixed right-0 top-0 z-40 flex h-screen flex-col ${isOpen ? "" : "translate-x-[100%]"} rounded-l-3xl bg-violet-800/25 bg-opacity-45 shadow-lg shadow-indigo-500/50 transition duration-500 ease-in-out lg:hidden`}
       >
         <button
           onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}
@@ -54,7 +54,7 @@ export default function Header() {
         >
           <MdOutlineArrowForwardIos size={20} />
         </button>
-        <ul className="  my-5 flex flex-col items-center justify-center gap-6 ">
+        <ul className="  mx-3 my-5 flex flex-col items-center justify-center gap-6 ">
           <Link href="#home" className={navStyle}>
             HOME
           </Link>
