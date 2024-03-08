@@ -6,6 +6,7 @@ import Link from "next/link";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Spline from "@splinetool/react-spline";
+import Hero3d from "@/components/Hero3d";
 
 // border-4 border-white
 export default function Hero() {
@@ -25,11 +26,7 @@ export default function Hero() {
       id="hero"
       className="relative flex h-screen w-full flex-col items-center justify-start"
     >
-      {!isMobile && (
-        <div className=" mr-[5vh] h-[40vh] w-full sm:mb-[-12vw] sm:h-[60vw] sm:max-h-[700px] sm:w-[60vw] 2xl:mb-[-7vw]">
-          <Spline scene="https://prod.spline.design/d-mvfO2CGrqE6Oxw/scene.splinecode" />
-        </div>
-      )}
+      {!isMobile && <Hero3d />}
 
       <div className="mx-48 mb-10 mt-52 flex w-[90vw] flex-col items-center px-12 text-center text-sm font-thin !leading-[1.5] sm:mt-0 sm:w-[90vw]  sm:text-right sm:text-base md:w-[80vw] md:text-xl  lg:text-2xl xl:text-3xl 2xl:w-[70vw] ">
         <div className=" mb-10 flex flex-col items-center justify-center sm:flex-row  md:mt-12">
