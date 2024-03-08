@@ -12,6 +12,7 @@ export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     function handleResize() {
+      "use client";
       setIsMobile(window.innerWidth < 640); // Adjust this threshold as needed
     }
 
