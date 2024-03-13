@@ -36,8 +36,8 @@ export default function Home() {
       <Header />
       <Hero isMobile={isMobile} />
       <About />
-      <Projects isMobile={isMobile} />
       <Skills />
+      <Projects isMobile={isMobile} />
       <Footer />
     </main>
   );

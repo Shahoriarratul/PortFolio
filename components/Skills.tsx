@@ -78,7 +78,7 @@ export default function Skills() {
   return (
     <div
       id="Skills"
-      className="flex h-[150vh] w-full flex-col items-center justify-center sm:h-[80vh]"
+      className="flex h-[140vh] w-full flex-col items-center justify-center sm:h-[80vh]"
     >
       {!isMobile && <Skill3d />}
 

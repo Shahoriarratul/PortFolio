@@ -34,9 +34,13 @@ export default function Footer() {
         </div>
         <div className="m-5 max-w-3xl rounded-lg border border-[#464c6a] p-3 text-white lg:p-5">
           <p className="text-sm text-[#d3d8e8]">
-            {
-              "If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests."
-            }
+            If you have any questions or concerns, please don&apos;t hesitate to
+            contact me in
+            <span className=" font-semibold text-violet-400">
+              shahoriar.ratul@gmail.com
+            </span>
+            . I am open to any work opportunities that align with my skills and
+            interests.
           </p>
           <form className="mt-6 flex flex-col gap-4" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-2">

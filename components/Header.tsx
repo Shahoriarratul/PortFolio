@@ -26,11 +26,11 @@ export default function Header() {
           <Link href="#about" className={navStyle}>
             ABOUT
           </Link>
-          <Link href="#projects" className={navStyle}>
-            PROJECTS
-          </Link>
           <Link href="#Skills" className={navStyle}>
             SKILLS
+          </Link>
+          <Link href="#projects" className={navStyle}>
+            PROJECTS
           </Link>
           <Link href="#footer" className={navStyle}>
             CONTACTS
@@ -63,12 +63,12 @@ export default function Header() {
             ABOUT
           </Link>
           <div className=" h-[2px] w-[30%] bg-white" />
-          <Link href="#projects" className={navStyle}>
-            PROJECTS
-          </Link>
-          <div className=" h-[2px] w-[30%] bg-white" />
           <Link href="#Skills" className={navStyle}>
             SKILLS
+          </Link>
+          <div className=" h-[2px] w-[30%] bg-white" />
+          <Link href="#projects" className={navStyle}>
+            PROJECTS
           </Link>
           <div className=" h-[2px] w-[30%] bg-white" />
           <Link href="#footer" className={navStyle}>

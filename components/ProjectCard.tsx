@@ -23,11 +23,11 @@ export default function ProjectCard(prop: propType) {
   }
   function handleGitLink(e: React.MouseEvent<HTMLDivElement>) {
     e.preventDefault;
-    // window.open(prop.gitLink, "_blank");
+    window.open(prop.gitLink, "_blank");
   }
 
   return (
-    <div className="relative mt-3 flex h-auto w-[80vw] flex-col items-center rounded-xl border-2 border-slate-500/25 bg-gradient-to-tr from-black/5 from-10% via-transparent via-50% to-black/5 to-80% backdrop-blur-[3px] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2 ">
+    <div className="relative mt-3 flex h-auto w-[80vw] flex-col items-center rounded-xl border-2 border-slate-500/25 bg-gradient-to-tr from-black/5 from-10% via-transparent via-50% to-black/5 to-80% backdrop-blur-[3px] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:mb-10 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2">
       <Image
         src={prop.src}
         onClick={handleClick}
@@ -38,7 +38,10 @@ export default function ProjectCard(prop: propType) {
       ></Image>
       <div className=" w-full p-1 sm:flex sm:h-full sm:w-full sm:flex-col sm:items-start sm:justify-start sm:p-3 sm:text-base">
         <div className="w-full py-1 text-sm font-bold text-white ">
-          <h1 className="sm:text-2xl sm:font-extrabold 2xl:text-3xl">
+          <h1
+            className="hover:cursor-pointer hover:text-[#FFF07C] sm:text-2xl sm:font-extrabold 2xl:text-3xl"
+            onClick={handleClick}
+          >
             {prop.name}
           </h1>
         </div>
@@ -59,7 +62,7 @@ export default function ProjectCard(prop: propType) {
       </div>
       <div
         onClick={handleGitLink}
-        className={` ${!prop.isMobile && "absolute bottom-2 right-2"} m-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm hover:text-slate-300 sm:text-base 2xl:text-lg`}
+        className={` ${!prop.isMobile && "absolute bottom-2 right-2"} m-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm hover:text-[#FFF07C] sm:text-base 2xl:text-lg`}
       >
         <span className="">CHECK OUT THE CODE</span>
         <AiOutlineGithub size={26} className=" text-violet-300" />
