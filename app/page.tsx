@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import About from "./About/page";
 import Footer from "./Footer/page";
 import Header from "./Header/page";
-import Hero from "./Hero/page";
+import Hero from "../components/Hero";
 import Projects from "./Projects/page";
 
 import { motion, useScroll } from "framer-motion";
