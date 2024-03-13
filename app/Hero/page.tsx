@@ -9,7 +9,7 @@ import Hero3d from "@/components/Hero3d";
 import { SlArrowDown } from "react-icons/sl";
 
 // border-4 border-white
-export default function Hero({ isMobile }: { isMobile?: Boolean }) {
+export default function Hero({ isMobile }: { isMobile?: any }) {
   return (
     <div
       id="hero"
