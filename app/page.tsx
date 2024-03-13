@@ -7,7 +7,7 @@ import Hero from "../components/Hero";
 import Projects from "./Projects/page";
 
 import { motion, useScroll } from "framer-motion";
-import Skills from "./Skills/page";
+import Skills from "../components/Skills";
 import { Asap } from "next/font/google";
 
 const asap = Asap({
