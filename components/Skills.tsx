@@ -42,7 +42,7 @@ const iconLink = [
   "MongoDB.png",
   "Redux.png",
   "Express.png",
-  "SQL.png",
+  "SQLDB.png",
   "PostgreSQL.png",
   "C.png",
   "net.png",
