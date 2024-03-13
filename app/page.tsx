@@ -18,9 +18,8 @@ const asap = Asap({
 });
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
   useEffect(() => {
-   
     function handleResize() {
       "use client";
       setIsMobile(window.innerWidth < 640); // Adjust this threshold as needed
