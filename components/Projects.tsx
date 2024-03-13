@@ -5,7 +5,7 @@ export default function Projects({ isMobile }: { isMobile: boolean }) {
   return (
     <div id="projects" className="flex w-full justify-center">
       <div className="flex flex-col items-center sm:my-16 sm:grid sm:grid-cols-1 sm:gap-20 sm:gap-y-2">
-        <div className=" z-10 mt-5 border-y-2 border-violet-900/45 p-4 text-center text-5xl text-[#FFF07C] text-transparent">
+        <div className=" z-10 mt-5 border-y-2 border-violet-900/45 p-4 text-center text-5xl text-[#FFF07C]">
           PROJECTS
         </div>
         <ProjectCard
