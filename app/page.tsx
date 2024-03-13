@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import About from "./About/page";
-import Footer from "./Footer/page";
-import Header from "./Header/page";
+import About from "../components/About";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 

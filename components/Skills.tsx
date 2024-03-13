@@ -20,7 +20,7 @@ const skillsData = [
   "MongoDB",
   "Redux",
   "Express",
-  "SQl",
+  "SQL",
   "PostgreSQL",
   "C#",
   ".net",
@@ -78,12 +78,50 @@ export default function Skills() {
   return (
     <div
       id="Skills"
-      className="flex w-full flex-col items-center justify-center"
+      className="flex h-[150vh] w-full flex-col items-center justify-center sm:h-[80vh]"
     >
       {!isMobile && <Skill3d />}
 
-      <div className=" z-10 mb-10 mt-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text p-4 text-center text-6xl text-transparent ">
+      <div className=" z-10 mt-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text p-4 text-center text-6xl text-transparent ">
         SKILLS
+      </div>
+      <div className="my-10  w-[80vw] rounded-lg border-2 border-slate-600/40 bg-gradient-to-tr from-black/5 from-10% via-transparent via-50% to-black/5  to-80% backdrop-blur-[3px] md:w-[60vw] md:text-3xl">
+        <div className=" m-5 flex flex-col items-center justify-center uppercase md:gap-2">
+          <div className="w-full">
+            <span className=" text-[#16f2b3]">Front End : </span>
+            <span className=" text-violet-400">
+              NEXT.js, TypeScript, React.Js, JavaScript, HTML & CSS
+            </span>
+          </div>
+          <div className="m-2 h-[2px] w-[90%]  rounded-full bg-slate-600/45" />
+          <div className="w-full">
+            <span className=" text-[#16f2b3]">Styling : </span>
+            <span className=" text-violet-400">
+              TailWind, Styled-Component, CSS
+            </span>
+          </div>
+          <div className="m-2 h-[2px] w-[90%]  rounded-full bg-slate-600/45 " />
+          <div className="w-full">
+            <span className=" text-[#16f2b3]">Back End : </span>
+            <span className=" text-violet-400">
+              NEXT.js, TypeScript, Node.js, Express.js , C#
+            </span>
+          </div>
+          <div className="m-2 h-[2px] w-[90%]  rounded-full bg-slate-600 bg-slate-600/45" />
+          <div className="w-full">
+            <span className=" text-[#16f2b3]">Database : </span>
+            <span className=" text-violet-400">
+              PostgreSQL, MongoDB, Prisma, Drizzle
+            </span>
+          </div>
+          <div className="m-2 h-[2px] w-[90%] rounded-full  bg-slate-600/45 " />
+          <div className="w-full">
+            <span className=" text-[#16f2b3]">Animation : </span>
+            <span className=" text-violet-400">
+              GSAP, Framer Motion , Motion.js
+            </span>
+          </div>
+        </div>
       </div>
       {isMobile ? (
         <div className="z-10 flex w-[80vw] flex-row flex-wrap justify-evenly">

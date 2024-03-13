@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Projects({ isMobile }: { isMobile: boolean }) {
   return (
-    <div id="projects" className="flex w-full justify-center sm:h-[130vh]">
+    <div id="projects" className="flex w-full justify-center">
       <div className="flex flex-col items-center sm:mt-16 sm:grid sm:grid-cols-1 sm:gap-20 sm:gap-y-2">
         <ProjectCard
           link="https://fast-pizza-sigma.vercel.app/"
