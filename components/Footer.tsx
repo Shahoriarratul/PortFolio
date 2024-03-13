@@ -4,8 +4,7 @@ import React, { EventHandler, FormEvent, useState } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { sendEmail } from "@/components/sendmail";
 import toast, { Toaster } from "react-hot-toast";
-
-import { SlReload } from "react-icons/sl";
+import { AiOutlineLoading } from "react-icons/ai";
 
 export default function Footer() {
   const [email, setEmail] = useState<string>("");
@@ -35,7 +34,7 @@ export default function Footer() {
         <div className="m-5 max-w-3xl rounded-lg border border-[#464c6a] p-3 text-white lg:p-5">
           <p className="text-sm text-[#d3d8e8]">
             If you have any questions or concerns, please don&apos;t hesitate to
-            contact me in
+            contact me in{" "}
             <span className=" font-semibold text-violet-400">
               shahoriar.ratul@gmail.com
             </span>
@@ -94,7 +93,7 @@ export default function Footer() {
                 ) : (
                   <>
                     <span>Sending...</span>
-                    <SlReload size={18} className="mt-1 animate-spin" />
+                    <AiOutlineLoading size={18} className="mt-1 animate-spin" />
                   </>
                 )}
               </button>
