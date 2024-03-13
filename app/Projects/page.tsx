@@ -1,5 +1,4 @@
 import ProjectCard from "@/components/ProjectCard";
-import { Tailwind } from "@react-email/components";
 import React from "react";
 
 export default function Projects({ isMobile }: { isMobile: boolean }) {
