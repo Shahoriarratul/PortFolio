@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { FaLink, FaArrowRight } from "react-icons/fa6";
+import { AiOutlineGithub } from "react-icons/ai";
 
 import React from "react";
-import Link from "next/link";
+
 type propType = {
   children: React.ReactNode;
   src: string;
@@ -12,8 +12,8 @@ type propType = {
   tech: Array<string>;
   name: string;
   gitLink: string;
+  isMobile: boolean;
 };
-
 export default function ProjectCard(prop: propType) {
   const router = useRouter();
   function handleClick(e: React.MouseEvent<HTMLDivElement>) {
@@ -23,18 +23,12 @@ export default function ProjectCard(prop: propType) {
   }
   function handleGitLink(e: React.MouseEvent<HTMLDivElement>) {
     e.preventDefault;
-    window.open(prop.gitLink, "_blank");
+    // window.open(prop.gitLink, "_blank");
+   
   }
 
   return (
-    <div className="relative mt-3 flex h-[35vh] w-[80vw] flex-col items-center rounded-xl bg-gradient-to-tr from-white/5 from-10% via-transparent via-50% to-white/5 to-80% backdrop-blur-[3px] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2 ">
-      <div
-        onClick={handleGitLink}
-        className=" absolute bottom-2 right-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm hover:text-slate-300 sm:text-base 2xl:text-lg"
-      >
-        <span className="">CHECK OUT THE CODE</span>
-        <FaLink size={30} className="text-violet-600" />
-      </div>
+    <div className="relative mt-3 flex h-auto w-[80vw] flex-col items-center rounded-xl border-2 border-slate-500/25 bg-gradient-to-tr from-black/5 from-10% via-transparent via-50% to-black/5 to-80% backdrop-blur-[3px] transition duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/50 sm:grid sm:h-[35vh] sm:w-[70vw] sm:grid-cols-2 ">
       <Image
         src={prop.src}
         onClick={handleClick}
@@ -63,6 +57,13 @@ export default function ProjectCard(prop: propType) {
         <div className="hidden w-full text-xs text-slate-300 sm:contents sm:text-sm 2xl:text-base">
           <p className="px-1">{prop.children}</p>
         </div>
+      </div>
+      <div
+        onClick={handleGitLink}
+        className={` ${!prop.isMobile && "absolute bottom-2 right-2"} m-2 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm hover:text-slate-300 sm:text-base 2xl:text-lg`}
+      >
+        <span className="">CHECK OUT THE CODE</span>
+        <AiOutlineGithub size={26} className=" text-violet-300" />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import About from "./About/page";
 import Footer from "./Footer/page";
 import Header from "./Header/page";
@@ -18,14 +18,26 @@ const asap = Asap({
 });
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+   
+    function handleResize() {
+      "use client";
+      setIsMobile(window.innerWidth < 640); // Adjust this threshold as needed
+    }
+
+    handleResize(); // Call it initially to set the state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setIsMobile]);
   return (
     <main
       className={` flex flex-col items-center bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] text-white ${asap.className}`}
     >
       <Header />
-      <Hero />
+      <Hero isMobile={isMobile} />
       <About />
-      <Projects />
+      <Projects isMobile={isMobile} />
       <Skills />
       <Footer />
     </main>

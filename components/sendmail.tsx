@@ -10,20 +10,18 @@ const resend = new Resend(resendAPI);
 type propType = {
   email: string;
   body: string;
+  name: string;
 };
 
-export const sendEmail = async ({ email, body }: propType) => {
-  // simple server-side validation
-
+export const sendEmail = async ({ email, body, name }: propType) => {
   let data;
   try {
     data = await resend.emails.send({
       from: `Contact Form <onboarding@resend.dev>`,
       to: "shahoriar.ratul@gmail.com",
       reply_to: `${email}`,
-
       subject: "Message from contact form",
-      react: emailTemp({ body, email }),
+      react: emailTemp({ body, email, name }),
     });
     console.log(data);
   } catch (error: unknown) {

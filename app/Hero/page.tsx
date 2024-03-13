@@ -9,18 +9,7 @@ import Hero3d from "@/components/Hero3d";
 import { SlArrowDown } from "react-icons/sl";
 
 // border-4 border-white
-export default function Hero() {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    function handleResize() {
-      "use client";
-      setIsMobile(window.innerWidth < 640); // Adjust this threshold as needed
-    }
-
-    handleResize(); // Call it initially to set the state
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [setIsMobile]);
+export default function Hero({ isMobile }: { isMobile: boolean }) {
   return (
     <div
       id="hero"
@@ -93,7 +82,7 @@ export default function Hero() {
       </div>
       <Link
         href="#about"
-        className=" absolute bottom-10 flex h-12 w-12 animate-bounce items-center justify-center rounded-full bg-violet-600/20 shadow-md shadow-blue-800/50 ring-1 ring-slate-300/70 sm:bottom-5"
+        className=" absolute bottom-10 hidden h-12 w-12 animate-bounce items-center justify-center rounded-full bg-violet-600/20 shadow-md shadow-blue-800/50 ring-1 ring-slate-300/70 sm:bottom-5 sm:flex "
       >
         <SlArrowDown className="text-white" />
       </Link>

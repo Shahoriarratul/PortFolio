@@ -18,7 +18,15 @@ const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export const emailTemp = ({ body, email }: { body: string; email: string }) => {
+export const emailTemp = ({
+  body,
+  email,
+  name,
+}: {
+  body: string;
+  email: string;
+  name: string;
+}) => {
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
     e.preventDefault();
     window.open("shahoriar-ratul.com", "_blank");
@@ -26,14 +34,12 @@ export const emailTemp = ({ body, email }: { body: string; email: string }) => {
   return (
     <Html>
       <Head />
-      <Preview>Email varification</Preview>
+      <Preview>Email from {name}</Preview>
       <Body style={main}>
         <Container>
           <Section style={logo}></Section>
 
           <Section style={content}>
-            <Row>Shahoriar Ratul</Row>
-
             <Row style={{ ...boxInfos, paddingBottom: "0" }}>
               <Column>
                 <Heading
@@ -53,27 +59,26 @@ export const emailTemp = ({ body, email }: { body: string; email: string }) => {
                     textAlign: "center",
                   }}
                 >
-                  We noticed a recent sent email to shahoriar Ratul from {email}
-                  .
+                  We noticed you received email from {name}.
                 </Heading>
 
                 <Text
                   style={{
-                    color: "rgb(0,0,0, 0.5)",
+                    color: "rgb(0,0,0)",
                     fontSize: 14,
                     marginTop: -5,
                   }}
                 >
                   {body}
                 </Text>
-
-                <Text style={paragraph}>
-                  If this was you, there`s nothing else you need to do.
-                </Text>
-                <Text style={{ ...paragraph, marginTop: -5 }}>
-                  If this wasn`t you or if you have additional questions, please
-                  visit my website shahoriar-ratul.com. or Email me at
-                  shahoriar.ratul@gmail.com
+                <Text
+                  style={{
+                    color: "rgb(0,0,0)",
+                    fontSize: 14,
+                    marginTop: -5,
+                  }}
+                >
+                  To reply use {email}
                 </Text>
               </Column>
             </Row>
