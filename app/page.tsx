@@ -4,7 +4,7 @@ import About from "./About/page";
 import Footer from "./Footer/page";
 import Header from "./Header/page";
 import Hero from "../components/Hero";
-import Projects from "./Projects/page";
+import Projects from "../components/Projects";
 
 import { motion, useScroll } from "framer-motion";
 import Skills from "../components/Skills";

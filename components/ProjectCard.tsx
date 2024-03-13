@@ -24,7 +24,6 @@ export default function ProjectCard(prop: propType) {
   function handleGitLink(e: React.MouseEvent<HTMLDivElement>) {
     e.preventDefault;
     // window.open(prop.gitLink, "_blank");
-   
   }
 
   return (
